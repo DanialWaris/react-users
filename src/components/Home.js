@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 import './Home.css';
 
 
 function Home() {
+    const { name, id } = useParams();
+    let history = useHistory();
     const [users, setUsers] = useState([])
     useEffect(() => {
         getUsers()
@@ -21,10 +23,18 @@ function Home() {
 
     const deleteUser = async id => {
         await axios.delete(`http://localhost:3003/users/${id}`);
+        history.push("/")
         getUsers();
     };
     return (
         <div>
+            <div style={{textAlign: "center", fontFamily : "sans-serif", fontWeight : "bold", margin : "30px 0px"}}><h1>Welcome "{name}"</h1></div>
+            <div style={{display :"flex", margin : "50px"}}>
+                <h3>Your Profile: </h3>
+            <Link to={`/edit/${id}`} className='btn edit mr-4 ml-4'>Edit</Link>
+            <Link onClick={() => deleteUser(id)} className='btn delete'>Log Out</Link>
+            </div>
+            
             <table class="table">
                 <thead>
                     <tr>
@@ -37,13 +47,11 @@ function Home() {
                 <tbody>
                     {users.map((user, index) => (
                         <tr key={index + 1}>
-                            <th scope="row">{index}</th>
-                            <td>{user.name}</td>
+                            <th scope="row">{user.id}</th>
+                            <td>{user.username}</td>
                             <td>{user.email}</td>
                             <td>
-                                <Link to={`/edit/${user.id}`} className='btn edit'>Edit</Link>
                                 <Link to={`/view/${user.id}`} className='btn view'>View</Link>
-                                <Link onClick={() => deleteUser(user.id)} className='btn delete'>Delete</Link>
                             </td>
                         </tr>
                     ))}

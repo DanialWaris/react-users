@@ -14,7 +14,6 @@ function View() {
   const loadUser = async () => {
     const result = await axios.get(`http://localhost:3003/users/${id}`)
     setUser(result.data)
-    console.log(result.data)
   }
 
     return (
@@ -47,15 +46,6 @@ function View() {
               placeholder="Enter Your E-mail Address"
               name="email"
               value={user.email}
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control form-control-lg"
-              placeholder="Enter Your Website Name"
-              name="website"
-              value={user.website}
             />
           </div>
           <Link to={'/home'} className="btn btn-warning btn-block">Back</Link>

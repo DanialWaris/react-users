@@ -2,10 +2,9 @@
   "users": [
     {
       "id": 1,
-      "name": "Danial Waris",
-      "username": "Muhammad Waris",
-      "email": "dani@gmail.com",
-      "password": "123456",
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
       "address": {
         "street": "Kulas Light",
         "suite": "Apt. 556",
@@ -29,7 +28,6 @@
       "name": "Ervin Howell",
       "username": "Antonette",
       "email": "Shanna@melissa.tv",
-      "password": "12345",
       "address": {
         "street": "Victor Plains",
         "suite": "Suite 879",
@@ -53,7 +51,6 @@
       "name": "Clementine Bauch",
       "username": "Samantha",
       "email": "Nathan@yesenia.net",
-      "password": "12345",
       "address": {
         "street": "Douglas Extension",
         "suite": "Suite 847",
@@ -77,7 +74,6 @@
       "name": "Patricia Lebsack",
       "username": "Karianne",
       "email": "Julianne.OConner@kory.org",
-      "password": "12345",
       "address": {
         "street": "Hoeger Mall",
         "suite": "Apt. 692",
@@ -101,7 +97,6 @@
       "name": "Chelsey Dietrich",
       "username": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",
-      "password": "12345",
       "address": {
         "street": "Skiles Walks",
         "suite": "Suite 351",
@@ -125,7 +120,6 @@
       "name": "Mrs. Dennis Schulist",
       "username": "Leopoldo_Corkery",
       "email": "Karley_Dach@jasper.info",
-      "password": "12345",
       "address": {
         "street": "Norberto Crossing",
         "suite": "Apt. 950",
@@ -149,7 +143,6 @@
       "name": "Kurtis Weissnat",
       "username": "Elwyn.Skiles",
       "email": "Telly.Hoeger@billy.biz",
-      "password": "12345",
       "address": {
         "street": "Rex Trail",
         "suite": "Suite 280",
@@ -173,7 +166,6 @@
       "name": "Nicholas Runolfsdottir V",
       "username": "Maxime_Nienow",
       "email": "Sherwood@rosamond.me",
-      "password": "12345",
       "address": {
         "street": "Ellsworth Summit",
         "suite": "Suite 729",
@@ -197,7 +189,6 @@
       "name": "Glenna Reichert",
       "username": "Delphine",
       "email": "Chaim_McDermott@dana.io",
-      "password": "12345",
       "address": {
         "street": "Dayna Park",
         "suite": "Suite 449",
@@ -221,7 +212,6 @@
       "name": "Clementina DuBuque",
       "username": "Moriah.Stanton",
       "email": "Rey.Padberg@karina.biz",
-      "password": "12345",
       "address": {
         "street": "Kattie Turnpike",
         "suite": "Suite 198",
@@ -239,6 +229,13 @@
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
       }
+    },
+    {
+      "name": "Danial",
+      "username": "Waris",
+      "email": "miandanial524@gmail.com",
+      "password": "123456",
+      "id": 11
     }
   ]
 }

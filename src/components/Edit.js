@@ -12,9 +12,7 @@ function Edit() {
   const [user, setUser] = useState({
     name: "",
     username: "",
-    email: "",
-    phone: "",
-    website: ""
+    email: ""
   });
 
   const { name, username, email, phone, website } = user;
@@ -33,7 +31,7 @@ function Edit() {
   const onSubmit = async e => {
     e.preventDefault();
     await axios.put(`http://localhost:3003/users/${id}`, user);
-    history.push("/home");
+    history.push(`/home/${user.name}/${user.id}`);
   };
 
 
@@ -69,26 +67,6 @@ function Edit() {
               placeholder="Enter Your E-mail Address"
               name="email"
               value={email}
-              onChange={e => onInputChange(e)}
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control form-control-lg"
-              placeholder="Enter Your Phone Number"
-              name="phone"
-              value={phone}
-              onChange={e => onInputChange(e)}
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control form-control-lg"
-              placeholder="Enter Your Website Name"
-              name="website"
-              value={website}
               onChange={e => onInputChange(e)}
             />
           </div>
