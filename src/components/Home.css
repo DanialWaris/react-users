@@ -1,0 +1,20 @@
+td .btn{
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 0px 2px;
+    width: 70px;
+}
+td .edit{
+    background-color: rgb(2, 130, 250);
+    color: white;
+}
+td .view{
+    background-color: white;
+    border: 1px solid rgb(2, 130, 250);
+    color: rgb(2, 130, 250);
+}
+td .delete{
+    background-color: red;
+    color: white;
+}
